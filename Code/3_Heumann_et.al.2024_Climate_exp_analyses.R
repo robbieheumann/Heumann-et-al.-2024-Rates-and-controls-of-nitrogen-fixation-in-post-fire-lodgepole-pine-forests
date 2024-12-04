@@ -6,7 +6,7 @@ library(lmtest)
 library(multcomp)
 library(scales)
 #### Import "cumulative clim_exp_flux_calcs" from cumulative flux calcs folder in box
-fluxes <- read_csv(".../Data/final_clim_exp_fluxes.csv")
+fluxes <- read_csv("Data/final_clim_exp_fluxes.csv")
 
 #make negative fluxes 0
 fluxes$flux_nmol_C2H4_g_hr[fluxes$flux_nmol_C2H4_g_hr < 0] <- 0
@@ -309,7 +309,6 @@ full_results <- full %>%
 ### when all samples are considered, temp and moist are insignificant effects, 
 ## however when just active samples are considered temp is significant for wood
 
-plot(lm(log10(flux_nmol_C2H4_g_hr) ~ poly(temp,2)*actual_moist_perc, data = active))
 
 
 

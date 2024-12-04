@@ -45,8 +45,11 @@ The following three files are created in Heumann_et.al.2024_field_flux_calcs to 
 	flux_nmol_C2H4_g_hr: the measured flux of nanomols of ethylene per gram dry mass per hour
 
 TO RUN THE SCRIPTS:
-clone the repository: git clone https://github.com/username/Data_code_repo_forpub.git
-	
+1. Clone the repository: git clone https://github.com/robbieheumann/Heumann-et-al.-2024-Rates-and-controls-of-nitrogen-fixation-in-post-fire-lodgepole-pine-forests.git
+
+2. Open R studio and set working directory to the clone repository
+
+3. Run scripts ensuring outputs consistent with those reported in the paper. 
 	
 
  
